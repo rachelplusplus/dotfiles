@@ -1,0 +1,28 @@
+# Git configuration template
+# Fill in the values in angle brackets, then save this file as ~/.gitconfig
+#
+# For an explanation of the signing-related values, please see:
+# https://docs.gitlab.com/user/project/repository/signed_commits/ssh/
+[user]
+	email = <email>
+	name = <name>
+	signingKey = <SSH public key>
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+	# Only include this next value on machines you access locally, where you have
+	# deployed both your public and private keys, not on remote machines.
+	# See the script itself for details.
+	#
+	# Note: This particular path is *not* shell-expanded, so you cannot write
+	# something like ~/scripts/git-signing-proxy.sh here, it needs to be a full path
+	program = <...>/git-signing-proxy.sh
