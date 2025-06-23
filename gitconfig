@@ -11,8 +11,14 @@
 	editor = nano
 [init]
 	defaultBranch = main
+[status]
+        submoduleSummary = true
+[diff]
+        submodule = log
 [commit]
 	gpgSign = true
+[submodule]
+        recurse = true
 [tag]
 	gpgSign = true
 [gpg]
