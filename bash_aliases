@@ -12,10 +12,12 @@ alias dc='git diff --cached'
 alias co='git checkout'
 alias b='git branch'
 alias show='git show --show-signature'
-alias r='git rebase -i --autosquash'
+alias r='git rebase -i'
 alias rc='git rebase --continue'
 alias squash='git commit -a --squash'
 alias fixup='git commit -a --fixup'
+
+alias check-conflicts='git -c core.whitespace=-space-before-tab,-indent-with-non-tab,-tab-in-indent,-trailing-space diff --check'
 
 # Open a tmux session of a specified name, regardless of whether it exists or not
 # (usage: `topen session_name`)

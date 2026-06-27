@@ -1,0 +1,42 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+    // Whitespace control
+    "detect_indentation": true,
+    "ensure_newline_at_eof_on_save": true,
+    "shift_tab_unindent": true,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+
+    // Character visibility options
+    "control_character_style": "names",
+    "draw_white_space": ["selection", "trailing", "isolated"],
+
+    // Disable autocomplete
+    "auto_complete": false,
+    "tab_completion": false,
+
+    // Find settings
+    "auto_find_in_selection": true,
+    "find_selected_text": true,
+    "close_find_after_find_all": true,
+    "close_find_after_replace_all": true,
+
+    // General UI settings
+    "copy_with_empty_selection": false,
+    "focus_on_file_drop": true,
+    "move_to_limit_on_up_down": false,
+    "preview_on_click": "only_left",
+    "scroll_past_end": true,
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+    "show_rel_path": true,
+    "show_tab_close_buttons": false,
+    "overlay_scroll_bars": "disabled",
+
+    // Mac-specific settings
+    "close_windows_when_empty": false,
+    "show_navigation_bar": false,
+}
