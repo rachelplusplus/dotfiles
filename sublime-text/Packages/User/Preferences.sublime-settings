@@ -19,22 +19,21 @@
 
     // Find settings
     "auto_find_in_selection": true,
-    "find_selected_text": true,
     "close_find_after_find_all": true,
     "close_find_after_replace_all": true,
+    "find_selected_text": true,
 
     // General UI settings
     "copy_with_empty_selection": false,
     "focus_on_file_drop": true,
-    "move_to_limit_on_up_down": false,
+    "move_to_limit_on_up_down": true,
+    "overlay_scroll_bars": "disabled",
     "preview_on_click": "only_left",
     "scroll_past_end": true,
     "show_encoding": true,
     "show_full_path": true,
     "show_line_endings": true,
     "show_rel_path": true,
-    "show_tab_close_buttons": false,
-    "overlay_scroll_bars": "disabled",
 
     // Mac-specific settings
     "close_windows_when_empty": false,
